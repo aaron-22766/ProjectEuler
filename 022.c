@@ -6,7 +6,7 @@
 /*   By: arabenst <arabenst@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 08:27:32 by arabenst          #+#    #+#             */
-/*   Updated: 2023/03/13 09:53:30 by arabenst         ###   ########.fr       */
+/*   Updated: 2023/03/13 16:01:11 by arabenst         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include "libft/src/libft.h"
+#include "libft/libft.h"
 
 int	ft_get_worth(char *name)
 {

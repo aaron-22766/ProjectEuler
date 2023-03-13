@@ -6,14 +6,14 @@
 /*   By: arabenst <arabenst@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/10 08:36:58 by arabenst          #+#    #+#             */
-/*   Updated: 2023/03/13 11:54:22 by arabenst         ###   ########.fr       */
+/*   Updated: 2023/03/13 16:01:05 by arabenst         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "libft/src/libft.h"
+#include "libft/libft.h"
 
 int	ft_factorial(int n)
 {

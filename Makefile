@@ -6,7 +6,7 @@
 #    By: arabenst <arabenst@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/13 09:45:46 by arabenst          #+#    #+#              #
-#    Updated: 2023/03/13 10:01:31 by arabenst         ###   ########.fr        #
+#    Updated: 2023/03/13 16:00:44 by arabenst         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,9 @@ clean:
 fclean: clean
 	$(RM) $(RMFLAGS) $(NAME)
 	make -C $(LIBFT_DIR) fclean
+
+libclean: fclean
+	$(RM) $(RMFLAGS) $(LIBFT_DIR)
 
 re: fclean all
 
