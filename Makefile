@@ -6,18 +6,20 @@
 #    By: arabenst <arabenst@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/13 09:45:46 by arabenst          #+#    #+#              #
-#    Updated: 2023/03/14 08:22:21 by arabenst         ###   ########.fr        #
+#    Updated: 2023/03/17 09:16:12 by arabenst         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	025
+NAME		=	027
+
+PRE			=	$(shell echo $(NAME)-1 | bc)
+PREV		=	$(shell printf "%03d" $(PRE))
 
 SRCDIR		=	.
-
 SRC			=	$(SRCDIR)/$(NAME).c
 
 CC			=	gcc
-CFLAGS		=	-Wall -Werror -Wextra
+CFLAGS		=	-Wall -Wextra -Wimplicitly-unsigned-literal
 
 RM			=	rm
 RMFLAGS		=	-rf
@@ -32,10 +34,11 @@ run: $(NAME)
 	@./$(NAME)
 
 $(NAME): $(LIBFT) $(SRC)
-	$(CC) -o $(NAME) $(SRC) $(ARCS)
+	$(CC) $(CFLAGS) -o $(NAME) $(SRC) $(ARCS)
 
 $(SRC):
-	touch $(NAME).c
+	$(RM) $(RMFLAGS) $(PREV)
+	cp template.c $(NAME).c
 
 $(LIBFT):
 	git clone https://github.com/aaron-22766/libft.git $(LIBFT_DIR); make -C $(LIBFT_DIR)
