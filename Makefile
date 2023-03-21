@@ -6,7 +6,7 @@
 #    By: arabenst <arabenst@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/13 09:45:46 by arabenst          #+#    #+#              #
-#    Updated: 2023/03/17 09:16:12 by arabenst         ###   ########.fr        #
+#    Updated: 2023/03/21 09:15:43 by arabenst         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRCDIR		=	.
 SRC			=	$(SRCDIR)/$(NAME).c
 
 CC			=	gcc
-CFLAGS		=	-Wall -Wextra -Wimplicitly-unsigned-literal
+CFLAGS		=	-Wall -Wextra -Werror
 
 RM			=	rm
 RMFLAGS		=	-rf
