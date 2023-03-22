@@ -6,11 +6,11 @@
 #    By: arabenst <arabenst@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/13 09:45:46 by arabenst          #+#    #+#              #
-#    Updated: 2023/03/21 09:15:43 by arabenst         ###   ########.fr        #
+#    Updated: 2023/03/22 07:55:04 by arabenst         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	027
+NAME		=	028
 
 PRE			=	$(shell echo $(NAME)-1 | bc)
 PREV		=	$(shell printf "%03d" $(PRE))
